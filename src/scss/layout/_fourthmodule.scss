@@ -1,0 +1,49 @@
+
+.wrapper2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: $backgroundColor;
+    color: $colorGreen;
+
+    
+    
+
+    &__text{
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+        line-height: normal;
+        margin: 0 27px 0 27px;
+
+        &--h3{
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        &--p{
+            font-size: 14px;
+            padding-bottom: 30px;
+        }
+
+        &--button{
+            color: white;
+            height: 48px;
+            width: 176px;
+            background-color: $colorGreen;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+        }
+    }
+
+    
+    
+
+    &__image--photo{
+        width:100%;
+    }
+        
+    
+}
