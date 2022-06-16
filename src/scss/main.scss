@@ -30,6 +30,11 @@
     justify-content: center;
     align-content: center;
 
+    &__link {
+        color:black;
+        
+    }
+
     
     
     &__logo{
@@ -58,7 +63,7 @@
     &__title{
         font-size: 24px;
         color: $colorGreen;
-        font-weight: bold;
+        font-weight: 600;
     }
 
     &__button{
