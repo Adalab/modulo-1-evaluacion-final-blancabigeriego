@@ -1,8 +1,83 @@
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: $color-secondary;
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: $colorGreen;
+    color: #b6c8c9;
+    line-height: normal;
+
+    &__section1{
+        margin: 40px 0px 40px 0;
+        
+        
+        &--h4{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        }
+        
+        &--nav{
+        font-size: 14px;
+        }
+    }
+
+    &__section2{
+        margin: 20px 0px 20px 0px;
+        
+        
+        &--h4{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        }
+        
+        &--nav{
+        font-size: 14px;
+        }
+    }
+
+    &__section3{
+        
+        margin: 20px 0px 40px 60px;
+        
+
+        &--h4{
+        font-size: 20px;
+        font-weight: 600;
+        
+        }
+        
+        &--list{
+        font-size: 14px;
+         }
+    
+        }
+
+        
+        
+
+    
+    
+}
+
+.fa-brands{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px 10px 0px;
+    
+}
+
+.adalab{
+    text-decoration: none;
+    color:#b6c8c9;
+}
+
+.up{
+    color: white;
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    bottom: 100px;
+    right: 100px;
 }
