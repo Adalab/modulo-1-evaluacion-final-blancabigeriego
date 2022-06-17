@@ -16,8 +16,6 @@
     color:black;
     width: 24px;
     height: 24px;
-    width: 18px;
-    height: 12px;
     position: fixed;
     top: 55px;
     left: 33px;
@@ -27,7 +25,7 @@
   
   
   &__logo{
-      display:flex;
+      
       width: 213px;
       height: 96px;
       left: 100px;
@@ -45,28 +43,69 @@
       justify-content: center;
       align-items: center;
       align-content: center;
-      gap: 62px;
       height: 160px;
-  }
-
-  &__title{
-      font-size: 24px;
-      color: $colorGreen;
-      font-weight: 600;
-  }
-
-  &__button{
-      color: white;
-      height: 48px;
-      width: 176px;
-      background-color: $colorGreen;
-      font-size: 16px;
-      font-weight: 600;
-      border: none;
       
+      &--title{
+        font-size: 24px;
+        color: $colorGreen;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+  
+    &--button{
+        color: white;
+        height: 48px;
+        width: 176px;
+        background-color: $colorGreen;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        
   }
 
+  }
+      
+}
+
+  @media all and(min-width: 900px) {
+
+    .header{
   
+  justify-content: left;
+
+      &__logo{
+        position: absolute;
+        left: 50%;
+        top: 49px;
+        transform: translate(-50%, -50%);
+      }
+
+      &__link{
+        top: 81px;
+        left: 85px;
+
+      }
+
+      &__section{
+        align-items: flex-start;
+        margin-top: 120px;
+        margin-left: 70px;
+
+        
+
+
+        &--title{
+          font-size: 36px;
+          max-width: 19ch;
+          text-align: left;
+        }
+
+        
+
+
+      }
+
+}
 
 }
 

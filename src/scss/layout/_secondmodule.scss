@@ -15,7 +15,9 @@
       font-weight: 600;
       text-align: center;
       margin: 41px 45px 37px 45px;
-      width: 20ch;
+      width: 45%;
+      max-width: 19ch;
+      min-width: 19ch;
       justify-self:center;
       
     }
@@ -49,7 +51,9 @@
       font-weight: 600;
       text-align: center;
       margin-top: 40px;
-      width: 14ch;
+      width: 30%;
+      max-width: 14ch;
+      min-width: 14ch;
       justify-self: center;
       line-height: normal;
       margin-bottom: 14px;
@@ -72,7 +76,8 @@
         color: $colorGreen;
         justify-self: center;
         text-align: center;
-        width: 18ch;
+        max-width: 18ch;
+        min-width: 18ch;
         margin-bottom: 40px;
         line-height: normal;
     }
@@ -83,7 +88,8 @@
         justify-self: center;
         text-align: center;
         line-height: normal;
-        width: 23ch;
+        max-width: 23ch;
+        min-width: 23ch;
         margin-bottom: 43px;
     }
 
@@ -92,13 +98,54 @@
         color: $colorGreen;
         text-align: center;
         line-height: normal;
-        width: 23ch;
+        max-width: 23ch;
+        min-width: 23ch;
         justify-self: center;
         margin-bottom: 18px;
     }
 
 
-    
+    @media all and (min-width: 900px) {
+        .wrapper1{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            &__h2{
+                grid-column: 1/4;
+                width:auto;
+                max-width: 35ch;
+            }
+
+            &__furniture{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+
+            &__bag{
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+
+            &__tent{
+                grid-column: 3/4;
+                grid-row: 2/3;
+            }
+
+            &__h3--uno{
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+
+            &__p--uno{
+                grid-column: 1/2;
+                grid-row: 4/5;
+            }
+
+            
+        }
+
+
+    }
 
    
 }
