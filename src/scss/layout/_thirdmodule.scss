@@ -30,4 +30,16 @@
        margin-top: 20px;
        margin-bottom: 50px;
     }
+
+    @media all and(min-width: 900px){
+
+        &__h3{
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        
+
+    }
+
 }
