@@ -30,6 +30,16 @@
         line-height: normal;
         margin: 0 27px 0 27px;
         width: 360px;
+
+        @media all and (min-width:900px) {
+            width: 430px;
+        }
+
+        @media all and (min-width: 1728px) {
+            text-align: left;
+            align-items: flex-start;
+    
+        }
         
 
         
@@ -44,12 +54,17 @@
 
             @media all and (min-width: 1728px){
                 font-size: 36px;
+
             }
         }
 
         &--p{
             font-size: 14px;
             padding-bottom: 30px;
+
+            @media all and (min-width: 900px) {
+                width: 400px;
+            }
 
             @media all and (min-width: 1728px){
                 font-size: 16px;
