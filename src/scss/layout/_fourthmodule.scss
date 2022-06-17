@@ -7,6 +7,10 @@
     color: $colorGreen;
     
 
+    @media all and (min-width: 900px){
+        grid-template-rows: 1fr 2fr;
+    }
+
     @media all and (min-width: 1728px){
         grid-template-columns: repeat( 2, 1fr);
         grid-template-rows: 1fr;
@@ -17,12 +21,15 @@
     
 
     &__text{
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
         align-self: center;
         align-items: center;
         text-align: center;
         line-height: normal;
         margin: 0 27px 0 27px;
+        width: 360px;
         
 
         
