@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat (4, 1fr);
-    width: 100%;
     line-height: normal;
     color: $colorGreen;
     
@@ -12,34 +11,25 @@
 
         grid-template-columns: repeat( 3, 1fr);
         grid-template-rows: 150px 400px;
-        padding: 20px;
-        
-
     }
-
     
-   
-    
-
-
     &__h2{
      font-size: 24px;
      font-weight: 600;
       text-align: center;
       margin: 41px 45px 37px 45px;
-      width: 45%;
-      max-width: 19ch;
-      min-width: 19ch;
+      width: 322px;
       justify-self:center;
 
       @media all and (min-width: 900px){
         grid-column: 1/4;
         grid-row: 1/2;
         padding: 20px;
-        max-width: 35ch;
+        width: 535px;
 
     @media all and (min-width: 1728px){
         font-size: 36px;
+        width: 799px;
     }        
     }
       
@@ -59,16 +49,15 @@
         @media all and (min-width: 900px){
             grid-column: 1/2;
             grid-row: 2/3;
+            gap: 10px;
         }
-
         
-        
-        
-
         &--title{
             font-size: 20px;
             color: $colorGreen;
             font-weight: 600;
+            text-align: center;
+            
 
             @media all and (min-width: 1728px){
                 font-size: 24px;
@@ -79,11 +68,10 @@
         &--text{
             font-size: 16px;
             text-align: center;
-
-            
-            
+           margin-right: auto;
+           margin-left: auto;
         }
-     }
+    }
 
 
 
@@ -102,6 +90,7 @@
         @media all and (min-width: 900px){
             grid-column: 2/3;
             grid-row: 2/3;
+            gap: 10px;
         }
 
         &--title{
@@ -109,11 +98,19 @@
             color: $colorGreen;
             font-weight: 600;
             text-align: center;
+
         }
 
         &--text{
             font-size: 16px;
             text-align: center;
+        }
+
+        &--bag{
+            
+            @media all and (min-width: 1728px){
+                margin-bottom: 12px;
+            }
         }
         
 }
@@ -130,6 +127,7 @@
             @media all and (min-width: 900px){
                 grid-column: 3/4;
                 grid-row: 2/4;
+                gap: 10px;
 
             }
     
