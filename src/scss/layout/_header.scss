@@ -10,6 +10,32 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  
+  @media all and(min-width: 900px){
+  
+    justify-content: left;
+     }
+
+  &__menu{
+    display:none;
+
+    @media all and (min-width:1728px){
+      display: flex;
+      
+      &--container{
+        display: flex;
+        width: 424px;
+        color: $colorGreen;
+        font-size: 16px;
+        font-weight: normal;
+        gap: 30px;
+        position: absolute;
+        top: 76px;
+        left: 280px;
+
+      }
+    }
+  }
 
 
   &__link {
@@ -19,6 +45,18 @@
     position: fixed;
     top: 55px;
     left: 33px;
+
+    
+    @media all and (min-width:900px){
+      top: 81px;
+      left: 85px;
+
+    }
+
+    @media all and (min-width: 1728px) {
+      display:none;
+    }
+
       
   }
 
@@ -31,8 +69,18 @@
       left: 100px;
       right: 100px;
       margin-top: 19px;
+
+      @media all and (min-width:900px){
+       
+          position: absolute;
+          left: 50%;
+          top: 49px;
+          transform: translate(-50%, -50%);
+        }
+
+      }
       
-  }
+  
 
   &__section{
       
@@ -44,12 +92,31 @@
       align-items: center;
       align-content: center;
       height: 160px;
+
+      @media all and (min-width: 900px){
+        align-items: flex-start;
+        margin-top: 120px;
+        margin-left: 70px;
+
+       }
+
+      @media all and (min-width: 1728px){
+        top: 400px;
+        left: 210px;
+      }
+
       
       &--title{
         font-size: 24px;
         color: $colorGreen;
         font-weight: 600;
         margin-bottom: 32px;
+
+        @media all and (min-width:900px){
+          font-size: 36px;
+          max-width: 19ch;
+          text-align: left;
+        }
     }
   
     &--button{
@@ -67,47 +134,22 @@
       
 }
 
-  @media all and(min-width: 900px) {
+   
 
-    .header{
-  
-  justify-content: left;
+    
 
-      &__logo{
-        position: absolute;
-        left: 50%;
-        top: 49px;
-        transform: translate(-50%, -50%);
-      }
+      
 
-      &__link{
-        top: 81px;
-        left: 85px;
+      
+        
 
-      }
 
-      &__section{
-        align-items: flex-start;
-        margin-top: 120px;
-        margin-left: 70px;
+       
 
         
 
 
-        &--title{
-          font-size: 36px;
-          max-width: 19ch;
-          text-align: left;
-        }
-
-        
-
-
-      }
-
-}
-
-}
+     
 
 
 
