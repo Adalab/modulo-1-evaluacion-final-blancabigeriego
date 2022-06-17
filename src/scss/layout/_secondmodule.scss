@@ -5,14 +5,17 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat (7, 1fr);
     width: 100%;
+    line-height: normal;
+    color: $colorGreen;
+    
+    
    
     
 
 
     &__h2{
      font-size: 24px;
-      color: $colorGreen;
-      font-weight: 600;
+     font-weight: 600;
       text-align: center;
       margin: 41px 45px 37px 45px;
       width: 45%;
@@ -24,129 +27,156 @@
 
     &__furniture{
         justify-self: center;
+        margin-bottom: 47px;
     }
 
     &__bag{
         justify-self: center;
+        margin-bottom: 47px;
     }
 
     &__tent{
         justify-self: center;
+        margin-bottom: 47px;
     }
 
-    &__h3--uno{
-        font-size: 20px;
-        color: $colorGreen;
-      font-weight: 600;
-      text-align: center;
-      margin-top: 47px;
-      margin-bottom: 12px;
-      
-     
-       }
+    &__section1{
 
-    &__h3--dos{
-        font-size: 20px;
-        color: $colorGreen;
-      font-weight: 600;
-      text-align: center;
-      margin-top: 40px;
-      width: 30%;
-      max-width: 14ch;
-      min-width: 14ch;
-      justify-self: center;
-      line-height: normal;
-      margin-bottom: 14px;
-
-    }
-
-    &__h3--tres{
-        font-size: 20px;
-        color: $colorGreen;
-      font-weight: 600;
-      text-align: center;
-      margin-top: 37px;
-      margin-bottom: 12px;
-      
-
-    }
-
-    &__p--uno{
-        font-size: 16px;
-        color: $colorGreen;
-        justify-self: center;
-        text-align: center;
-        max-width: 18ch;
-        min-width: 18ch;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 40px;
-        line-height: normal;
-    }
+        margin-left: 105px;
+        margin-right: 105px;
+        
+        
 
-    &__p--dos{
-        font-size: 16px;
-        color: $colorGreen;
-        justify-self: center;
-        text-align: center;
-        line-height: normal;
-        max-width: 23ch;
-        min-width: 23ch;
-        margin-bottom: 43px;
-    }
+        &--title{
+            font-size: 20px;
+            color: $colorGreen;
+            font-weight: 600;
 
-    &__p--tres{
-        font-size: 16px;
-        color: $colorGreen;
-        text-align: center;
-        line-height: normal;
-        max-width: 23ch;
-        min-width: 23ch;
-        justify-self: center;
-        margin-bottom: 18px;
-    }
+         }
+
+        &--text{
+            font-size: 16px;
+            text-align: center;
+            
+
+        }
+     }
 
 
-    @media all and (min-width: 900px) {
-        .wrapper1{
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
 
-            &__h2{
-                grid-column: 1/4;
-                width:auto;
-                max-width: 35ch;
+
+
+     &__section2{
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 105px;
+        margin-right: 105px;
+
+        &--title{
+            font-size: 20px;
+            color: $colorGreen;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        &--text{
+            font-size: 16px;
+            text-align: center;
+        }
+        
+}
+    &__section3{
+
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+            margin-left: 105px;
+            margin-right: 105px;
+    
+            &--title{
+                font-size: 20px;
+                color: $colorGreen;
+                font-weight: 600;
+                text-align: center;
+            }
+    
+            &--text{
+                font-size: 16px;
+                text-align: center;
             }
 
-            &__furniture{
-                grid-column: 1/2;
-                grid-row: 2/3;
-            }
+     
+}
 
-            &__bag{
-                grid-column: 2/3;
-                grid-row: 2/3;
-            }
+@media all and (min-width: 900px) {
 
-            &__tent{
-                grid-column: 3/4;
-                grid-row: 2/3;
-            }
+    .wrapper1{
+    grid-template-columns: repeat( 3, 1fr);
+    grid-template-rows: repeat( 3, 1fr);
+    padding: 20px;
 
-            &__h3--uno{
-                grid-column: 1/2;
-                grid-row: 3/4;
-            }
+        &__h2{
+            grid-column: 1/4;
+            grid-row: 1/2;
+            padding: 20px;
+            max-width: 35ch;
+            
+        }
 
-            &__p--uno{
-                grid-column: 1/2;
-                grid-row: 4/5;
-            }
+        &__furniture{
 
+            grid-column: 1/2;
+            grid-row: 2/3;
+            
+        }
+
+        &__bag{
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        &__tent{
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        &__section1 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            
+
+            &--title{
+                
+            }
+        }
+
+        &__section2{
+            grid-column: 2/3;
+            grid-row: 3/4;
+            
+        }
+
+        &__section3{
+            grid-column: 3/4;
+            grid-row: 3/4;
             
         }
 
 
-    }
+}
+}
+    
 
-   
 }
 
