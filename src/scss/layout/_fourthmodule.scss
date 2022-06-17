@@ -5,7 +5,13 @@
     grid-template-rows: repeat(2, 1fr);
     background-color: $backgroundColor;
     color: $colorGreen;
-    
+    width: 100vw;
+
+    @media all and (min-width: 1728px){
+        grid-template-columns: repeat( 2, 1fr);
+        grid-template-rows: 1fr;
+
+    }
 
     
     
@@ -17,6 +23,7 @@
         text-align: center;
         line-height: normal;
         margin: 0 27px 0 27px;
+        width: 100%;
 
         
 
@@ -27,11 +34,19 @@
             @media all and (min-width:900px){
                 font-size: 30px;
             }
+
+            @media all and (min-width: 1728px){
+                font-size: 36px;
+            }
         }
 
         &--p{
             font-size: 14px;
             padding-bottom: 30px;
+
+            @media all and (min-width: 1728px){
+                font-size: 16px;
+            }
         }
 
         &--button{
