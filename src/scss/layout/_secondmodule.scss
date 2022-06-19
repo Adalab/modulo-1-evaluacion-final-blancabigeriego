@@ -53,11 +53,13 @@
         margin-bottom: 40px;
         margin-left: 105px;
         margin-right: 105px;
+        
 
         @media all and (min-width: 900px){
             grid-column: 1/2;
             grid-row: 2/3;
             gap: 10px;
+            
         }
         
         &--title{
@@ -94,11 +96,13 @@
         margin-bottom: 40px;
         margin-left: 105px;
         margin-right: 105px;
+        
 
         @media all and (min-width: 900px){
             grid-column: 2/3;
             grid-row: 2/3;
             gap: 10px;
+            
         }
 
         &--title{
@@ -131,11 +135,13 @@
             margin-bottom: 40px;
             margin-left: 105px;
             margin-right: 105px;
+            
 
             @media all and (min-width: 900px){
                 grid-column: 3/4;
                 grid-row: 2/4;
                 gap: 10px;
+                
 
             }
     
