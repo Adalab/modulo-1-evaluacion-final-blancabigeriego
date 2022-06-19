@@ -16,10 +16,14 @@
     &__h2{
      font-size: 24px;
      font-weight: 600;
-      text-align: center;
-      margin: 41px 45px 37px 45px;
-      width: 322px;
-      justify-self:center;
+     text-align: center;
+     margin: 41px 45px 37px 45px;
+     width: 322px;
+     justify-self:center;
+
+        &--open{
+        text-transform: uppercase;
+      }
 
       @media all and (min-width: 900px){
         grid-column: 1/4;
@@ -27,12 +31,16 @@
         padding: 20px;
         width: 535px;
 
+        }
+
     @media all and (min-width: 1728px){
         font-size: 36px;
         width: 799px;
     }        
     }
-      
+
+    &__h2::first-letter{
+        text-transform: uppercase;
     }
 
 

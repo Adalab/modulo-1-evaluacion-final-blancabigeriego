@@ -88,6 +88,7 @@
             background-color: $colorGreen;
             font-size: 16px;
             font-weight: 600;
+            text-transform: capitalize;
             border: none;
         }
 
@@ -98,7 +99,7 @@
     
 
     &__image--photo{
-        width:100%;
+        width: 100%;
     }
         
     
