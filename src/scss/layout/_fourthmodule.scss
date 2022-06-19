@@ -94,12 +94,18 @@
         
     }
 
-    
+    &__image{
+
+        width: 100%;
+        background-color: $colorGreen;
+
+        &--photo{
+            width: 100%;
+        }
+    }
     
 
-    &__image--photo{
-        width: 100%;
-    }
+    
         
     
 }
