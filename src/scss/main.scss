@@ -9,4 +9,42 @@
 @import 'layout/footer';
 
 
+.special{
+    display:none;
 
+    @media all and (min-width:900px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: $colorOrange;
+
+        &__title {
+            color: white;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+
+        &__flex{
+
+            display: flex;
+            gap: 25px;
+
+            &--subtitle{
+            color:white;
+            font-size: 20px;
+            
+            
+
+        }
+
+            &--p {
+            color: white;
+            font-size: 16px;
+        }
+
+        }   
+    }
+}
