@@ -92,7 +92,9 @@
             margin: 71px 118px 74px 0px;
         }
 
-       
+       &--nav{
+        display: flex;
+       }
 
         &--h4{
         font-size: 20px;
@@ -145,3 +147,10 @@
      }
 
  }
+
+li{
+    list-style: none;
+    
+ }
+
+ 
