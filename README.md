@@ -1,3 +1,3 @@
-#EVALUACION FINAL BLANCA BIGERIEGO:
+## FIRST EXAM FROM WEB DEVELOPING BOOTCAMP
 
-Ejercicio de evaluación final del módulo 1 del bootcamp de ADALAB.
+I had to create a responisve website using HTML, CSS and Sass.
